@@ -203,3 +203,78 @@ body {
 .rodape__link:hover {
     color: var(--botao-azul);
 }
+
+@media screen and (max-width:1024px) {
+    .container {
+        height: auto;
+    }
+    .principal {
+        background-image: none;
+        background-size: auto;
+        padding: 5%;
+        
+    }
+    .div__principal_botoes {
+        width: 100%;
+        padding: 0;
+    }
+    .titulo__container {
+        font-size: 1rem;
+        
+    }
+    .container__botao {
+        width: 60%;
+        padding: 12px 2px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    /*seção secundária */
+    .secundario {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0;
+        
+    }
+    .secundario__imagem {
+        max-width: 400px; 
+        order: 1;
+    }
+    .botao__secundario {
+        font-size: 12px;
+    }
+    .titulo__aviso {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .texto__aviso {
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
+    /*seção dispositivos*/
+    .dispositivos {
+        margin: 150px 0;
+        gap: 2rem;
+    }
+    .titulo__dispositivos {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .container__titulo_dispositivos {
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
+
+    .rodape {
+        padding: 3% 5%;
+    }
+    .rodape__logo {
+        width: 70px;
+    }
+    
+    .rodape__link {
+        font-size: 12px;
+    }
+    .rodape__texto {
+        font-size: 10px;
+    }
+} 
