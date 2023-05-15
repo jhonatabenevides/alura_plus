@@ -107,7 +107,7 @@ body {
     gap: 1rem;
 }
 .div {
-    padding: 5%;
+    padding: 9%;
 
 }
 .botao__secundario {
@@ -129,30 +129,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
 }
-.span__dispositivos {
+.dispositivos__lista {
     display: flex;
     text-align: center;
+    list-style-type: none;
+    justify-content: center;
+    margin: 5rem 0 10rem;
 }
-.container__dispositivos {
+.dispositivos__itens {
     display: flex;
     flex-direction: column;
     width: 33%
 }
 
-.titulo__dispositivos {
+.dispositivos__titulo {
     font-size: 3rem;
     font-family: var(--fonte-principal);
     font-weight: 700;
-    line-height: 3.6rem;
     text-align: center;
+    color: var(--branco-principal);
 }
 .container__titulo_dispositivos {
     font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.4rem;
+    color: var(--branco-principal);
 }
  
 /*rodape*/
@@ -162,7 +165,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .rodape__link {
@@ -185,7 +188,7 @@ body {
 
 
 
-/* códigos hover*/
+/* pseudoelementos*/
 .container__botao:hover {
     font-size: 1.1rem;
     color: var(--cor-hover-botao);
@@ -203,6 +206,7 @@ body {
 .rodape__link:hover {
     color: var(--botao-azul);
 }
+
 
 @media screen and (max-width:1024px) {
     .container {
@@ -223,10 +227,11 @@ body {
         
     }
     .container__botao {
-        width: 60%;
+        width: 85%;
         padding: 12px 2px;
         border-radius: 8px;
         font-size: 12px;
+        max-width: 400px;
     }
     /*seção secundária */
     .secundario {
@@ -252,13 +257,16 @@ body {
     }
     /*seção dispositivos*/
     .dispositivos {
-        margin: 150px 0;
-        gap: 2rem;
+        margin: 0;
     }
-    .titulo__dispositivos {
+    .dispositivos__titulo {
         font-size: 1rem;
         line-height: 1.2rem;
     }
+    .dispositivos__lista {
+        margin: 2rem 0 5rem ;
+    }
+    
     .container__titulo_dispositivos {
         font-size: 12px;
         line-height: 1.2rem;
